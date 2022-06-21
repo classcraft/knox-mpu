@@ -98,7 +98,7 @@ describe('Knox multipart form uploads', function() {
     it('should be able to upload a file to S3', function(done) {
 
         // Create a temporary file of data for uploading
-        var tempFile = path.resolve(path.join(os.tmpDir(), 'knoxmpu-file-upload-test.txt')),
+        var tempFile = path.resolve(path.join(os.tmpdir(), 'knoxmpu-file-upload-test.txt')),
             writeStream = fs.createWriteStream(tempFile),
             mockDataStream = new mockstream.MockDataStream({chunkSize: 2048, streamLength: 6242880});
 
